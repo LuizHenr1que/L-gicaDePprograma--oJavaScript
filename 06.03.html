@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação Javascript</title>
+</head>
+<body>
+    <h1>Lógica de programação Javascript</h1>
+
+    <script>
+        
+        var arr = new Array(1, 2, 3, 5, 2);
+        //mostrar na tela a soma dos números pares da array acima
+
+        somaOsPares(arr)
+
+       function somaOsPares (arr) {
+            var soma = 0;
+            //oque for dividido por 2 é numero par
+            for(var i = 0; i < arr.length; i++){
+        
+                if( !isNaN(arr[i]) && arr[i] % 2 === 0){
+                    soma += arr[i];
+                }
+            }
+
+            alert('a soma dos numeros pares é: ' + soma);
+       }
+
+    </script>
+</body>
+</html>
