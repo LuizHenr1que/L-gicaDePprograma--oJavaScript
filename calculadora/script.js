@@ -66,11 +66,18 @@ function iniciarCalculo(simbolo){
         n2 = '';
         monstrarNoDisplay(n1)
     }
-
-    
-
-    console.log(n1, operacao, n2)
 }
+
+function incluirPonto(){
+    if(operacao && n2 === ''){
+        n2 = '0.';
+    } else if (operacao && n2) {
+        n1 += '.';
+    } else {
+        n1 += '.';
+    }
+}
+
 
 function monstrarNoDisplay(valor) {
     document.querySelector('#display').innerHTML = valor
